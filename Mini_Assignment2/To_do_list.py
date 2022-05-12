@@ -27,12 +27,12 @@ time.sleep(10)
 select_element = driver.find_element(By.ID,'selectElementID')
 select_object = Select(select_element)
 
-<select>
+'''<select>
  <option value=value1>Bread</option>
  <option value=value2 selected>Milk</option>
  <option value=value3>Cheese</option>
 </select>
-
+'''
 select_object.select_by_index(1)
 
 first_selected_option = select_object.first_selected_option

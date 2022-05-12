@@ -4,6 +4,7 @@ from Current_temp import Current_temp
 from Summer import click_buy_sunscreens_button, add_spf50, add_spf30
 from Winter import click_buy_moisturizers_button, add_aloe, add_almond
 from Payment import goto_cart, click_pay_with_card, fill_cart, pay
+from Mini_Assignment5.Logging import getlogger
 
 
 def summer_shopping():
@@ -14,6 +15,7 @@ def summer_shopping():
     add_spf50(browser)
     print("Least Priced SPF-50 product added to the cart..")
     add_spf30(browser)
+    getlogger().info()
     print("Least Priced SPF-30 product added to the cart..")
 
 
